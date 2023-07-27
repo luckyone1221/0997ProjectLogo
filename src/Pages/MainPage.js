@@ -4,7 +4,7 @@ export const MainPage = (props) => {
   return(
     <div className="main-wrapper">
       <main>
-
+                
       </main>
     </div>
   )

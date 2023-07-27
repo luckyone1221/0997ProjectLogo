@@ -97,10 +97,14 @@ body {
 	}
 }
 
-.main-wrapper { 
+.main-wrapper {
 	position: relative;
 	width: 100%;
-	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	//overflow: hidden;
+
 	// display: flex;
 	// flex-direction: row; 
 // /	overflow: scroll;
@@ -135,6 +139,11 @@ main{
 
 .section-title {
 	margin-bottom: var(--sTPB);
+
+
+	h1,h2{
+		line-height: calc(44/36);
+	}
 
 	& > *:last-child{
 		margin-bottom: 0;
@@ -597,4 +606,69 @@ iframe {
 			counter-increment: num;
 		}
 	}
+}
+
+//custom
+.container-lg-fluid{
+	@extend .container;
+
+	@include media-breakpoint-up(lg){
+		max-width: 100%!important;
+	}
+	@include media-breakpoint-up(xl){
+		padding: 0 rem(32);
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	border: 1px solid $input-border-color;
+	-webkit-text-fill-color: $input-color;
+	-webkit-box-shadow: 0 0 0px 5000px #{$input-bg} inset;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+
+//
+.custom-chb{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+
+	input:checked + .chb-square{
+		border-color: $primary;
+		background: $primary;
+	}
+
+	.chb-square{
+		@include mt();
+		display: block;
+		width: rem(20);
+		height: rem(20);
+		border-radius: rem(6);
+
+		border: 1px solid $input-border-color;
+		box-shadow: 0px 5px 4px -4px rgba(0, 0, 0, 0.02), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+		margin-right: rem(16);
+	}
+
+	.chb-txt{
+		color: $secondary;
+		font-size: rem(14);
+		font-weight: 500;
+		line-height: calc(20/14);
+		letter-spacing: rem(-0.128);
+	}
+}
+
+.btn-primary,
+.btn-secondary{
+	color: $white!important;
 }

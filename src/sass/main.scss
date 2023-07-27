@@ -102,7 +102,8 @@ $output-bourbon-deprecation-warnings: false;
 @import "root";
 @import "base";
 
-//@import '../blocks/Header/_Header.scss';
+@import '../blocks/Login/_Login.scss';
+@import '../blocks/SideBar/_SideBar.scss';
 
 //@import '../pug/blocks/**/*.scss';
 // @import '../pug/blocks/form-wrap/form-wrap.scss';

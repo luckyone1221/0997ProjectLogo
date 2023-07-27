@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a340c945-d1dc-42c6-ae7d-b6ccc65f8a71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pages/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/LoginWrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/ResetPass1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/SignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/_Login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarBanner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarLowerLinks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarProfileBtn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/_Sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/DashboardPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/LoginPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/ResetPassPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/SignUpPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SvgSprites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_root.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -35,9 +61,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../0991Cort5" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\working\0997ProjectLogo\src\Pages" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,7 +79,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690328245125</updated>
-      <workItem from="1690328246305" duration="2151000" />
+      <workItem from="1690328246305" duration="6493000" />
+      <workItem from="1690394131953" duration="22846000" />
     </task>
     <servers />
   </component>
@@ -64,5 +97,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
