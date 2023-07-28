@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import './index.css';
+import 'swiper/css';
+
 import {App} from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -16,11 +19,13 @@ const defaultState = {
   menuLinks: {
     work: [
       {
+        key: "cv-generator",
         img: stab,
         name: "CV Generator",
         href: "/work/cv-generator",
       },
       {
+        key: "invest-plan",
         img: stab,
         name: "Invest Plan",
         href: "/work/invest-plan",
@@ -28,46 +33,30 @@ const defaultState = {
     ],
     study: [
       {
+        key: "cv-generator",
         img: stab2,
         name: "CV Generator",
-        href: "/work/cv-generator",
+        href: "/study/cv-generator",
       },
       {
+        key: "invest-plan",
         img: stab2,
         name: "Invest Plan",
-        href: "/work/invest-plan",
+        href: "/study/invest-plan",
       },
     ],
     business: [
       {
+        key: "cv-generator",
         img: stab3,
         name: "CV Generator",
-        href: "/work/cv-generator",
+        href: "/business/cv-generator",
       },
       {
+        key: "invest-plan",
         img: stab3,
         name: "Invest Plan",
-        href: "/work/invest-plan",
-      },
-      {
-        img: stab3,
-        name: "CV Generator",
-        href: "/work/cv-generator",
-      },
-      {
-        img: stab3,
-        name: "Invest Plan",
-        href: "/work/invest-plan",
-      },
-      {
-        img: stab3,
-        name: "CV Generator",
-        href: "/work/cv-generator",
-      },
-      {
-        img: stab3,
-        name: "Invest Plan",
-        href: "/work/invest-plan",
+        href: "/business/invest-plan",
       },
     ],
   }

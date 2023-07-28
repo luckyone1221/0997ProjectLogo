@@ -170,11 +170,13 @@
     color: $secondary;
     margin-left: -1px;
 
+    font-weight: 500;
+    letter-spacing: rem(-0.128);
+
     &:hover{
       color: $body-color;
     }
 
-    &:last-child,
     &.active{
       color: $primary;
       border-color: $primary;

@@ -6,18 +6,28 @@ import {LoginPage} from "./Pages/LoginPage";
 import {ResetPassPage} from "./Pages/ResetPassPage";
 import {SignUpPage} from "./Pages/SignUpPage";
 import {DashboardPage} from "./Pages/DashboardPage";
-import {ServicesPage} from "./Pages/ServicesPage";
+import {CategoryPage} from "./Pages/CategoryPage";
+import {ServicePage} from "./Pages/ServicePage";
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage/>}/>
+        {/*login series*/}
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/resetPass-step1" element={<ResetPassPage/>}/>
         <Route path="/sign-up" element={<SignUpPage/>}/>
+
+        {/**/}
         <Route path="/dashboard" element={<DashboardPage/>}/>
-        <Route path="/work" element={<ServicesPage name="Work" description="Work Plan Only" configKey="work"/>}/>
+        <Route path="/work" element={<CategoryPage name="Work" description="Work Plan Only" configKey="work" theme="warning"/>}/>
+        <Route path="/study" element={<CategoryPage name="Study" description="Study Plan Only" configKey="study" theme="primary"/>}/>
+        <Route path="/business" element={<CategoryPage name="Business" description="Business Plan Only" configKey="business" theme="info"/>}/>
+        {/*!!!!!<Route for Plans: /plans*/}
+
+        {/**/}
+        <Route path="/work/:service" element={<ServicePage description="Work Plan Only" theme="warning" configKey="work"/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -15,7 +15,7 @@ export const ServiceBoard = (props) => {
               <h1>{name}</h1>
             </div>
             <div className="col-auto">
-              <div className={`info-tag`}>
+              <div className="info-tag">
                 <TagIcon/>
                 <span>{description}</span>
               </div>
@@ -25,7 +25,7 @@ export const ServiceBoard = (props) => {
       </div>
       <div className="container">
         <div className="sSBoard__row row">
-          {config.menuLinks.work.map((service, index) => {
+          {config.menuLinks[configKey].map((service, index) => {
             return <DashboardCard key={index} img={service.img} name={service.name} href={service.href}/>
           })}
         </div>
