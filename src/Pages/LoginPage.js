@@ -6,11 +6,9 @@ export const LoginPage = (props) => {
 
   return(
     <div className="main-wrapper">
-      <main>
-        <LoginWrap>
-          <Login/>
-        </LoginWrap>
-      </main>
+      <LoginWrap>
+        <Login/>
+      </LoginWrap>
     </div>
   )
 }

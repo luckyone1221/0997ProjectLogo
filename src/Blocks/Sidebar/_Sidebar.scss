@@ -1,23 +1,43 @@
 .sidebar{
+  transition: all .3s ease-in-out, width 0s, height 0s;
   position: fixed;
   z-index: 999;
-  top: 0;
   left: 0;
   @extend .custom-scroll;
   overflow-y: auto;
-  height: 100%;
-  width: 316px;
-  padding: rem(24) rem(16);
 
   display: flex;
   flex-direction: column;
   align-items: stretch;
 
+  background: $gray-910;
+
+  width: 100%;
+  @include media-breakpoint-up(sm){
+    width: var(--sidebar-w);
+  }
+
+
+  transform: translateX(-105%);
+  &.active{
+    transform: translateX(0);
+  }
+  top: var(--header-h);
+  height: calc(100% - var(--header-h));
+  padding: rem(16);
+  border-top: 1px solid lighten($gray-910, 5);
+  @include media-breakpoint-up(lg){
+    border-top: none;
+    top: 0;
+    height: 100%;
+    transform: none!important;
+    padding: rem(24) rem(16);
+  }
+
   &__logo{
-    background: $gray-910;
     display: block;
-    margin-bottom: rem(24);
     width: rem(138);
+    margin-bottom: rem(24);
 
     img{
       max-width: 100%;
@@ -47,19 +67,48 @@
 
   //SidebarMenu
   &__menu{
-    margin-bottom: rem(24);
+    padding-bottom: rem(24);
+    margin-bottom: auto;
+
+    &--lower{
+      margin-bottom: 0;
+    }
   }
   &__menu-item{
 
   }
   &__plate{
+    @include mt();
+    display: flex;
+    align-items: stretch;
+    margin-bottom: rem(8);
+    border-radius: rem(8);
+    overflow: hidden;
+    cursor: pointer;
+
+    background-color: transparent;
+    &.active{
+      background-color: $green2;
+      color: $body-color;
+      --icon-fill-col: #{#E5E5E6};
+    }
+
+    &:hover{
+      background-color: rgba($green2, .5);
+      color: $white;
+      --icon-fill-col: #{$white};
+    }
+  }
+  &__link{
+    flex-grow: 1;
     display: flex;
     align-items: center;
     padding: rem(8);
-    margin-bottom: rem(8);
   }
+
   &__icon{
     margin-right: rem(12);
+    border-radius: inherit;
 
     width: rem(24);
     height: rem(24);
@@ -69,6 +118,7 @@
     justify-content: center;
 
     & > * {
+      @include mt();
       max-width: 100%;
       max-height: 100%;
     }
@@ -83,9 +133,135 @@
     letter-spacing: rem(-0.128);
   }
   &__dd-arrow{
+    @include mt();
+    width: rem(40);
+    height: rem(40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    &:hover{
+      background: rgba($primary, .3);
+    }
+
+    & > * {
+      @include mt();
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
-  &__{}
+  &__submenu{
+    margin-left: auto;
+    max-width: calc(100% - #{rem(18)});
+    border-left: 1px solid #2C2C2E;
+    margin-bottom: rem(8);
+
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+  &__submenu-item{
+    @include mt();
+    position: relative;
+    display: block;
+    padding: rem(7) rem(15);
+    border-left: 2px solid transparent;
+    color: $secondary;
+    margin-left: -1px;
+
+    &:hover{
+      color: $body-color;
+    }
+
+    &:last-child,
+    &.active{
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+
+
+  //
+  &__banner{
+    border-radius: rem(6);
+    background: #1D1E1F;
+    padding: rem(20);
+    margin-bottom: rem(24);
+  }
+  &__b-img{
+    height: rem(130);
+    margin-bottom: rem(20);
+
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  &__b-title{
+    display: block;
+    color: $body-color;
+    font-weight: 600;
+    letter-spacing: rem(-0.128);
+    margin-bottom: 8px;
+  }
+  &__b-descr{
+    display: block;
+    color: $secondary;
+    font-size: rem(12);
+    line-height: 1.5;
+    margin-bottom: rem(20);
+  }
+  &__b-btn{
+    @extend .btn;
+    @extend .btn-primary;
+
+    display: block;
+
+    color: var(--accent-contrast, #FAFAFA);
+    text-align: center;
+    padding: rem(8) rem(12);
+    font-size: rem(13);
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  //
+  &__profile-btn{
+    display: block;
+    padding: rem(8);
+    border: 1px solid #2C2C2E;
+
+    border-radius: rem(4);
+    box-shadow: 0px 5px 4px -4px rgba(0, 0, 0, 0.02), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  }
+  &__pb-row{
+    --bs-gutter-x: #{rem(12)};
+  }
+  &__pb-avatar{
+    width: rem(40);
+    height: rem(40);
+
+    border-radius: rem(24);
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__pb-name{
+    color: $body-color;
+    font-weight: 600;
+    letter-spacing: rem(-0.128);
+  }
+  &__pb-tag{
+    color: $secondary;
+    font-size: rem(12);
+    line-height: 1.5;
+  }
+
   &__{}
   &__{}
   &__{}

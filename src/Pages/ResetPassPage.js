@@ -7,11 +7,9 @@ export const ResetPassPage = (props) => {
 
   return(
     <div className="main-wrapper">
-      <main>
-        <LoginWrap>
-          <ResetPass1/>
-        </LoginWrap>
-      </main>
+      <LoginWrap>
+        <ResetPass1/>
+      </LoginWrap>
     </div>
   )
 }

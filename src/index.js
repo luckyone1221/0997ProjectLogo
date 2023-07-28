@@ -7,14 +7,76 @@ import reportWebVitals from './reportWebVitals';
 import {createStore} from "redux";
 import {Provider} from "react-redux";
 
-const defaultState = {
+import stab from "./img/svg/service-cv-generator.svg"
+import stab2 from "./img/svg/service-stab2.svg"
+import stab3 from "./img/svg/service-stab3.svg"
 
+const defaultState = {
+  mobMenuActive: false,
+  menuLinks: {
+    work: [
+      {
+        img: stab,
+        name: "CV Generator",
+        href: "/work/cv-generator",
+      },
+      {
+        img: stab,
+        name: "Invest Plan",
+        href: "/work/invest-plan",
+      },
+    ],
+    study: [
+      {
+        img: stab2,
+        name: "CV Generator",
+        href: "/work/cv-generator",
+      },
+      {
+        img: stab2,
+        name: "Invest Plan",
+        href: "/work/invest-plan",
+      },
+    ],
+    business: [
+      {
+        img: stab3,
+        name: "CV Generator",
+        href: "/work/cv-generator",
+      },
+      {
+        img: stab3,
+        name: "Invest Plan",
+        href: "/work/invest-plan",
+      },
+      {
+        img: stab3,
+        name: "CV Generator",
+        href: "/work/cv-generator",
+      },
+      {
+        img: stab3,
+        name: "Invest Plan",
+        href: "/work/invest-plan",
+      },
+      {
+        img: stab3,
+        name: "CV Generator",
+        href: "/work/cv-generator",
+      },
+      {
+        img: stab3,
+        name: "Invest Plan",
+        href: "/work/invest-plan",
+      },
+    ],
+  }
 };
 
 const reducer = (state=defaultState, action) => {
   switch (action.type){
-    case "DO_SOMETHING":
-      return {...state, someProp: action.payload}
+    case "CHANGE_MOBMENUACTIVE":
+      return {...state, mobMenuActive: action.payload}
     default:
       return state
   }

@@ -2,28 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a340c945-d1dc-42c6-ae7d-b6ccc65f8a71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/LoginWrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/ResetPass1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/SignUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Login/_Login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarBanner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarLowerLinks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarProfileBtn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/_Sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/DashboardPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/ResetPassPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/SignUpPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SvgSprites.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Dashboard/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Dashboard/_Dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/Header/_Header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HooksAndFuncs/useCalcHeaderHeight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HooksAndFuncs/useDefineLinkActive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HooksAndFuncs/useMobMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarLowerLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarLowerLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarProfileBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/SidebarProfileBtn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/Sidebar/_Sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/Sidebar/_Sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/DashboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/DashboardPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ResetPassPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ResetPassPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/SignUpPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SvgSprites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SvgSprites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/svg/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/svg/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/_root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_root.scss" afterDir="false" />
@@ -41,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -80,7 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1690328245125</updated>
       <workItem from="1690328246305" duration="6493000" />
-      <workItem from="1690394131953" duration="22846000" />
+      <workItem from="1690394131953" duration="24060000" />
+      <workItem from="1690483763321" duration="18169000" />
     </task>
     <servers />
   </component>

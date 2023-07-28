@@ -6,14 +6,9 @@ export const SidebarLowerLinks = (props) => {
   return(
     <div className="sidebar__menu sidebar__menu--lower">
       <SidebarMenuItem
-        icon={<MenuIconWorkHistory/>}
-        href="/"
-        itemName={"Business"}
-      />
-      <SidebarMenuItem
         icon={<MenuIconPlans/>}
-        href="/"
-        itemName={"Workspace"}
+        href="/plans"
+        itemName={"Plans"}
       />
     </div>
   )

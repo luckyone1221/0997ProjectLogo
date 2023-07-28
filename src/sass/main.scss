@@ -104,6 +104,8 @@ $output-bourbon-deprecation-warnings: false;
 
 @import '../blocks/Login/_Login.scss';
 @import '../blocks/SideBar/_SideBar.scss';
+@import '../blocks/Header/_Header.scss';
+@import '../blocks/Dashboard/_Dashboard.scss';
 
 //@import '../pug/blocks/**/*.scss';
 // @import '../pug/blocks/form-wrap/form-wrap.scss';

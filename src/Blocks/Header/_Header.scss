@@ -1,0 +1,71 @@
+.header{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: rem(16) 0;
+  background: $gray-910;
+
+  &__logo{
+    display: block;
+    width: rem(138);
+
+    img{
+      max-width: 100%;
+    }
+  }
+  &__burger{
+    width: rem(32);
+    height: rem(32);
+    position: relative;
+
+    span:before,
+    span:after,
+    span{
+      @include mt();
+      content: '';
+      width: rem(32);
+      height: rem(4);
+      border-radius: rem(2);
+      background-color: $white;
+      position: absolute;
+    }
+
+    span{
+      top: 50%;
+      left: calc(50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    span:before{
+      top: -9px;
+      left: 0px;
+    }
+    span:after{
+      left: 0px;
+      top: 9px;
+    }
+
+    &.active{
+      span{
+        background-color: transparent;
+      }
+
+      span:before{
+        transform: rotate(-45deg);
+        top: 0;
+        left: 0;
+      }
+      span:after{
+        transform: rotate(45deg);
+        top: 0;
+        left: 0;
+      }
+    }
+
+  }
+  &__{}
+  &__{}
+  &__{}
+}
