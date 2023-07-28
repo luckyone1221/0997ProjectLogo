@@ -6,6 +6,7 @@ import {LoginPage} from "./Pages/LoginPage";
 import {ResetPassPage} from "./Pages/ResetPassPage";
 import {SignUpPage} from "./Pages/SignUpPage";
 import {DashboardPage} from "./Pages/DashboardPage";
+import {ServicesPage} from "./Pages/ServicesPage";
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
         <Route path="/resetPass-step1" element={<ResetPassPage/>}/>
         <Route path="/sign-up" element={<SignUpPage/>}/>
         <Route path="/dashboard" element={<DashboardPage/>}/>
+        <Route path="/work" element={<ServicesPage name="Work" description="Work Plan Only" configKey="work"/>}/>
       </Routes>
     </BrowserRouter>
   );

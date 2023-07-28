@@ -1,0 +1,14 @@
+.sSBoard{
+  @include media-breakpoint-up(lg){
+    --sPT: 0;
+  }
+
+  &__row{
+    --bs-gutter-x: #{rem(16)};
+    --bs-gutter-y: #{rem(16)};
+    @include media-breakpoint-up(md){
+      --bs-gutter-x: #{rem(24)};
+      --bs-gutter-y: #{rem(24)};
+    }
+  }
+}

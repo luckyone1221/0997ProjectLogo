@@ -1,0 +1,30 @@
+.footer{
+  padding: rem(40) 0;
+  background: #1D1E1F;
+  @include media-breakpoint-up(lg){
+    padding-left: var(--sidebar-w);
+  }
+
+  &__txt-row{
+    --bs-gutter-x: #{rem(8)};
+    --bs-gutter-y: #{rem(12)};
+  }
+  &__all-rights{
+    color: $secondary;
+
+    font-size: rem(12);
+    line-height: 1.5;
+  }
+  &__policy{
+    display: block;
+    color: $body-color;
+    &:hover{
+      color: $primary;
+    }
+
+    font-size: rem(12);
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  &__{}
+}

@@ -42,7 +42,7 @@ export const DashboardDDItem = (props) => {
   const [isDDOpen, setIsDDOpen] = useState(true);
 
   return(
-    <div className={`sDashboard__dd-item sDashboard__dd-item--${theme}`}>
+    <div className={`sDashboard__dd-item ${theme}`}>
       <div className="sDashboard__dd-head" onClick={() => setIsDDOpen(!isDDOpen)}>
         <div className="sDashboard__dd-row row align-items-center">
           <div className="col-auto">
@@ -54,7 +54,7 @@ export const DashboardDDItem = (props) => {
             <div className="sDashboard__dd-name">{name}</div>
           </div>
           <div className="col-auto">
-            <div className={`sDashboard__dd-tag ${isDDOpen ? "active" : ""}`}>
+            <div className={`info-tag ${isDDOpen ? "active" : ""}`}>
               <TagIcon/>
               <span>{descr}</span>
             </div>
