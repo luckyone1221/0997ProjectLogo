@@ -2,8 +2,10 @@ import img from "../../img/edit-photo.png"
 import {ThreeDotsIcon} from "../../SvgSprites";
 
 import {Link} from "react-router-dom";
+import {useAuth} from "../../context/AuthContext";
 
 export const SidebarProfileBtn = (props) => {
+  const {currentUser} = useAuth()
   const {} = props;
 
   return(
@@ -14,10 +16,12 @@ export const SidebarProfileBtn = (props) => {
             <img src={img} alt=""/>
           </div>
         </div>
-        <div className="col">
-          <div className="sidebar__pb-name">Kianna Press</div>
-          <div className="sidebar__pb-tag">@kianna</div>
-        </div>
+        {currentUser &&
+            <div className="col">
+              <div className="sidebar__pb-name">{currentUser.first_name}</div>
+              <div className="sidebar__pb-tag">{currentUser.last_name}</div>
+            </div>
+        }
         <div className="col-auto">
           <ThreeDotsIcon/>
         </div>
