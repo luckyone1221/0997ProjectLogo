@@ -35,11 +35,6 @@ export const SidebarMenu = (props) => {
         itemName={"Business"}
         subMenu={config.menuLinks.business}
       />
-      <SidebarMenuItem
-        icon={<MenuIconWorkspace/>}
-        href="/workspace"
-        itemName={"Workspace"}
-      />
     </div>
   )
 }

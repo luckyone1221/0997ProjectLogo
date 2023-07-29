@@ -39,6 +39,7 @@ export const Breadcrumbs = (props) => {
       <Swiper
         className="breadcrumbs__slider"
         slidesPerView={'auto'}
+        spaceBetween={24}
         freeMode={true}
         modules={[FreeMode]}
       >
@@ -55,13 +56,15 @@ export const Breadcrumbs = (props) => {
           return(
             <SwiperSlide>
               {index !== bcArray.length-1 && (
-                <Link to={item.href} className="breadcrumbs__item">
-                  {item.txt}
-                </Link>
+                <>
+                  <Link to={item.href} className="breadcrumbs__item">
+                    {txt}
+                  </Link>
+                </>
               )}
               {index === bcArray.length - 1 && (
                 <div className="breadcrumbs__item breadcrumbs__item--current">
-                  {item.txt}
+                  {txt}
                 </div>
               )}
             </SwiperSlide>

@@ -12,7 +12,7 @@ export const ServiceDescr = (props) => {
         {children}
         <div className="sDescr__top-row row align-items-center">
           <div className="col-lg">
-            <div className="sDescr__name-row row">
+            <div className="sDescr__name-row row align-items-center">
               <div className="col-auto">
                 <div className="sDescr__img">
                   <img src={stab} alt=""/>
@@ -35,7 +35,7 @@ export const ServiceDescr = (props) => {
             </div>
           </div>
           <div className="col-lg-auto">
-            <Link className="sDescr__generate-btn" to={"/"}>
+            <Link className="sDescr__generate-btn" to={`${window.location.pathname}/workspace`}>
               Generate CV
             </Link>
           </div>
@@ -43,7 +43,7 @@ export const ServiceDescr = (props) => {
         <div className="sDescr__main-row row">
           <div className="col-lg-8">
             <div className="sDescr__content-box">
-              <h2>What is CV Generator?</h2>
+              <h4>What is CV Generator?</h4>
               <p>The CV Generator is an advanced AI tool designed to revolutionize the way you create and refine your curriculum vitae (CV) or resume. With its powerful features and intuitive interface, it empowers job seekers, professionals, and students to effortlessly generate impressive resumes tailored to their unique skills and experiences.</p>
               <ul>
                 <li>Intelligent Resume Creation: The CV Generator harnesses the power of artificial intelligence to assist you in creating a compelling and professional resume. Through its smart algorithms, it analyzes your input and suggests appropriate sections, formats, and designs to ensure your resume stands out in a competitive job market.</li>
@@ -59,7 +59,7 @@ export const ServiceDescr = (props) => {
               </p>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 order-first order-lg-0">
             <PlanBox configKey={configKey}/>
           </div>
         </div>

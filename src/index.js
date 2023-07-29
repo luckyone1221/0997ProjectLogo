@@ -14,6 +14,8 @@ import stab from "./img/svg/service-cv-generator.svg"
 import stab2 from "./img/svg/service-stab2.svg"
 import stab3 from "./img/svg/service-stab3.svg"
 
+
+
 const defaultState = {
   mobMenuActive: false,
   menuLinks: {
