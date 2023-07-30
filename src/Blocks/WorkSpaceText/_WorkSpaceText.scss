@@ -18,11 +18,22 @@
   }
   &__i-row{
     --bs-gutter-x: #{rem(24)};
-    --bs-gutter-y: #{rem(32)};
-    margin-bottom: rem(60);
+
+    --bs-gutter-y: #{rem(18)};
+    margin-bottom: rem(40);
+    @include media-breakpoint-up(sm){
+      --bs-gutter-y: #{rem(24)};
+      margin-bottom: rem(60);
+    }
   }
   &__input-wrap{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    .input-group{
+      flex-grow: 1;
+    }
   }
   &__input-title{
     display: block;
@@ -32,11 +43,15 @@
 
     margin-bottom: rem(13);
   }
+  textarea{
+    min-height: rem(160);
+  }
   &__input{
+    flex-grow: 1;
     padding: rem(8) rem(12);
     width: 100%;
 
-    font-size: rem(16);
+    //font-size: rem(16);
     line-height: calc(26/16);
     letter-spacing: rem(-0.176);
   }
@@ -65,7 +80,11 @@
   }
   &__r-row{
     --bs-gutter-x: #{rem(24)};
-    --bs-gutter-y: #{rem(24)};
+
+    --bs-gutter-y: #{rem(18)};
+    @include media-breakpoint-up(sm){
+      --bs-gutter-y: #{rem(24)};
+    }
     margin-bottom: rem(24);
   }
 
@@ -80,6 +99,84 @@
   &__rc-row{
 
   }
+  &__r-title{}
+  &__rc-row{
+    --bs-gutter-x: #{rem(24)};
+    --bs-gutter-y: #{rem(18)};
+  }
+  &__rc-period{
+    color: $secondary;
+    letter-spacing: rem(-0.128);
+
+    margin-bottom: rem(10);
+    @include media-breakpoint-up(lg){
+      margin-bottom: rem(2);
+    }
+  }
+  &__rc-name-box{
+    @include media-breakpoint-up(lg){
+      display: flex;
+    }
+    align-items: center;
+    margin-bottom: rem(13);
+  }
+  &__rc-name{
+    font-size: rem(18);
+    font-weight: 600;
+    line-height: calc(28/18);
+    letter-spacing: rem(-0.256);
+
+    max-width: 50%;
+
+    &:after{
+      @include media-breakpoint-down(lg){
+        display: block;
+        content: "";
+        width: rem(32);
+        height: 1px;
+        background: $secondary;
+        margin: rem(6) 0;
+      }
+      @include media-breakpoint-up(lg){
+        content: "|";
+        margin: 0 rem(8);
+      }
+    }
+  }
+  &__rc-position{
+    max-width: 50%;
+
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: calc(26/16);
+    letter-spacing: rem(-0.176);
+  }
+  &__rc-descr{
+    color: $secondary;
+    letter-spacing: rem(-0.128);
+  }
+  &__rc-btn-row{
+    --bs-gutter-x: #{rem(16)};
+  }
+  &__rc-btn{
+    cursor: pointer;
+    width: rem(24);
+    height: rem(24);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > *{
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &:hover{
+      --icon-fill-col: #{$primary};
+    }
+  }
+  &__{}
   &__{}
   &__{}
 }

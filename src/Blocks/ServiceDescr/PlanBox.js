@@ -3,26 +3,26 @@ import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
 export const PlanBox = (props) => {
-  const {configKey} = props;
+  const {data} = props;
   const config = useSelector(state => state);
 
   return(
     <Link className="sDescr__plan" to="/plans">
       <div className="sDescr__p-title">
-        Available in {configKey.charAt(0).toUpperCase() + configKey.slice(1)} Plan
+        {data.title}
       </div>
       <div className="sDescr__p-price-box">
         <div className="sDescr__p-price">
-          $60
+          {data.price}
         </div>
         <div className="sDescr__p-gray">/mo</div>
       </div>
       <div className="sDescr__p-items">
-        {config.menuLinks[configKey].map((service, index) => {
+        {config.menuLinks[data.configKey].map((service, index) => {
           return <PlanBoxItem key={index} txt={service.name}/>
         })}
       </div>
-      <div className="sDescr__btn">Buy {configKey.charAt(0).toUpperCase() + configKey.slice(1)} Plan</div>
+      <div className="sDescr__btn">{data.btnTxt}</div>
     </Link>
   )
 }

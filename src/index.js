@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 import './index.css';
 import 'swiper/css';
+import servicesData from "./servicesData.json"
 
 import {App} from './App';
 import reportWebVitals from './reportWebVitals';
@@ -15,9 +16,9 @@ import stab2 from "./img/svg/service-stab2.svg"
 import stab3 from "./img/svg/service-stab3.svg"
 
 
-
 const defaultState = {
   mobMenuActive: false,
+  servicesData: servicesData,
   menuLinks: {
     work: [
       {
