@@ -111,5 +111,457 @@
         }
       }
     }
+  },
+  "content-plan" : {
+    "info": {
+      "theme": "warning",
+      "title": "CV Generator",
+      "tagTxt": "Work Plan Only",
+      "subtitle": "Verify people's identities using a photo-based identity document, a selfie and artificial intelligence algorithms.",
+      "btnTxt": "Generate CV",
+      "htmlContent": "<h4>What is CV Generator?</h4><p>The CV Generator is an advanced AI tool designed to revolutionize the way you create and refine your curriculum vitae (CV) or resume. With its powerful features and intuitive interface, it empowers job seekers, professionals, and students to effortlessly generate impressive resumes tailored to their unique skills and experiences.</p><ul><li>Intelligent Resume Creation: The CV Generator harnesses the power of artificial intelligence to assist you in creating a compelling and professional resume. Through its smart algorithms, it analyzes your input and suggests appropriate sections, formats, and designs to ensure your resume stands out in a competitive job market.</li><li>Tailored to Your Profile: This AI tool recognizes that every individual has distinct qualifications and career objectives. By leveraging machine learning capabilities, it customizes your resume based on your specific skills, work history, education, and industry. It offers a personalized approach, ensuring that your CV accurately represents your unique professional profile.</li><li>Dynamic Templates and Formatting: CV Generator offers an extensive collection of visually appealing and modern resume templates. From classic to contemporary designs, it provides a range of options to suit different industries and roles. Additionally, it offers flexible formatting features, allowing you to easily adjust font styles, colors, and layouts to create a polished and eye-catching document.</li><li>Keyword Optimization: In today's digital age, many companies utilize applicant tracking systems (ATS) to filter resumes based on specific keywords. The CV Generator optimizes your resume by suggesting relevant keywords and phrases commonly sought after by recruiters and employers. This ensures that your CV aligns with the requirements of the desired job, increasing your chances of getting noticed.</li><li>Real-time Suggestions and Editing: As you construct your resume, the CV Generator provides real-time suggestions to enhance the content and structure of your CV. It assists in organizing your information, improving sentence structure, and highlighting accomplishments. These suggestions help you craft a persuasive and well-written document that effectively showcases your qualifications.</li><li>Language and Grammar Enhancement: With its built-in natural language processing capabilities, the CV Generator enhances the language and grammar of your resume. It helps eliminate typos, grammatical errors, and awkward phrasing, ensuring your document appears professional and error-free. This feature ensures that your CV makes a positive and polished impression on potential employers.</li><li>Easy Export and Sharing: Once you've created your CV, the CV Generator allows you to export it in multiple formats such as PDF, Word, or plain text, ensuring compatibility with various application processes. It also provides seamless integration with popular cloud storage platforms, enabling easy sharing and collaboration with others.</li></ul><p>In summary, the CV Generator is an indispensable AI tool that empowers you to create compelling and tailored resumes effortlessly. By leveraging the power of artificial intelligence, it saves you time, optimizes your CV, and increases your chances of landing your dream job. With its intelligent features and user-friendly interface, it is your ultimate assistant in crafting outstanding resumes.</p>",
+      "plan": {
+        "configKey": "work",
+        "title": "Available in Work Plan",
+        "price": "$60",
+        "btnTxt": "Buy Work Plan"
+      }
+    },
+    "workSpace": {
+      "title": "Generate CV from your text",
+      "subtitle": "You only need to enter your ideas and we will create everything for you",
+      "btnTxt": "Generate CV",
+      "data": {
+        "key": "cv-generation",
+        "title": "Generate CV from your text",
+        "descr": "You only need to enter your ideas and we will create everything for you",
+        "fields": {
+          "content": [
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "full_name",
+              "title": "Full Name",
+              "placeholder": "Vasiliy Petrenko",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "expert_in",
+              "title": "Expert In",
+              "placeholder": "UX/UI Design, English Teacher, etc.",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "years_of_experience",
+              "title": "Years of experience ",
+              "placeholder": "5+",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "skills",
+              "title": "Skills",
+              "placeholder": "Photoshop, Figma, Adobe After Effect, etc.",
+              "value": ""
+            },
+            {
+              "bsCol": "col-12",
+              "type": "textarea",
+              "name": "about_you",
+              "title": "About you",
+              "placeholder": "Tell us more details about you",
+              "value": ""
+            },
+            {
+              "name": "work_experience",
+              "type": "repeater",
+              "repeaterData": {
+                "mainTitle": "Work Experience",
+                "itemSample": {
+                  "content": [
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "text",
+                      "name": "company_name",
+                      "title": "Company Name",
+                      "placeholder": "Google Inc.",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "date-period",
+                      "name": "work_time_line",
+                      "title": "Work Timeline [since/till]",
+                      "placeholder": "Choose Date",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "text",
+                      "name": "position",
+                      "title": "Position",
+                      "placeholder": "Junior UX/UI Designer",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-12",
+                      "type": "textarea",
+                      "name": "details",
+                      "title": "Tell us about your work",
+                      "placeholder": "Tell us more details about you",
+                      "value": ""
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "marketing-plan" : {
+    "info": {
+      "theme": "warning",
+      "title": "CV Generator",
+      "tagTxt": "Work Plan Only",
+      "subtitle": "Verify people's identities using a photo-based identity document, a selfie and artificial intelligence algorithms.",
+      "btnTxt": "Generate CV",
+      "htmlContent": "<h4>What is CV Generator?</h4><p>The CV Generator is an advanced AI tool designed to revolutionize the way you create and refine your curriculum vitae (CV) or resume. With its powerful features and intuitive interface, it empowers job seekers, professionals, and students to effortlessly generate impressive resumes tailored to their unique skills and experiences.</p><ul><li>Intelligent Resume Creation: The CV Generator harnesses the power of artificial intelligence to assist you in creating a compelling and professional resume. Through its smart algorithms, it analyzes your input and suggests appropriate sections, formats, and designs to ensure your resume stands out in a competitive job market.</li><li>Tailored to Your Profile: This AI tool recognizes that every individual has distinct qualifications and career objectives. By leveraging machine learning capabilities, it customizes your resume based on your specific skills, work history, education, and industry. It offers a personalized approach, ensuring that your CV accurately represents your unique professional profile.</li><li>Dynamic Templates and Formatting: CV Generator offers an extensive collection of visually appealing and modern resume templates. From classic to contemporary designs, it provides a range of options to suit different industries and roles. Additionally, it offers flexible formatting features, allowing you to easily adjust font styles, colors, and layouts to create a polished and eye-catching document.</li><li>Keyword Optimization: In today's digital age, many companies utilize applicant tracking systems (ATS) to filter resumes based on specific keywords. The CV Generator optimizes your resume by suggesting relevant keywords and phrases commonly sought after by recruiters and employers. This ensures that your CV aligns with the requirements of the desired job, increasing your chances of getting noticed.</li><li>Real-time Suggestions and Editing: As you construct your resume, the CV Generator provides real-time suggestions to enhance the content and structure of your CV. It assists in organizing your information, improving sentence structure, and highlighting accomplishments. These suggestions help you craft a persuasive and well-written document that effectively showcases your qualifications.</li><li>Language and Grammar Enhancement: With its built-in natural language processing capabilities, the CV Generator enhances the language and grammar of your resume. It helps eliminate typos, grammatical errors, and awkward phrasing, ensuring your document appears professional and error-free. This feature ensures that your CV makes a positive and polished impression on potential employers.</li><li>Easy Export and Sharing: Once you've created your CV, the CV Generator allows you to export it in multiple formats such as PDF, Word, or plain text, ensuring compatibility with various application processes. It also provides seamless integration with popular cloud storage platforms, enabling easy sharing and collaboration with others.</li></ul><p>In summary, the CV Generator is an indispensable AI tool that empowers you to create compelling and tailored resumes effortlessly. By leveraging the power of artificial intelligence, it saves you time, optimizes your CV, and increases your chances of landing your dream job. With its intelligent features and user-friendly interface, it is your ultimate assistant in crafting outstanding resumes.</p>",
+      "plan": {
+        "configKey": "work",
+        "title": "Available in Work Plan",
+        "price": "$60",
+        "btnTxt": "Buy Work Plan"
+      }
+    },
+    "workSpace": {
+      "title": "Generate CV from your text",
+      "subtitle": "You only need to enter your ideas and we will create everything for you",
+      "btnTxt": "Generate CV",
+      "data": {
+        "key": "cv-generation",
+        "title": "Generate CV from your text",
+        "descr": "You only need to enter your ideas and we will create everything for you",
+        "fields": {
+          "content": [
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "full_name",
+              "title": "Full Name",
+              "placeholder": "Vasiliy Petrenko",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "expert_in",
+              "title": "Expert In",
+              "placeholder": "UX/UI Design, English Teacher, etc.",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "years_of_experience",
+              "title": "Years of experience ",
+              "placeholder": "5+",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "skills",
+              "title": "Skills",
+              "placeholder": "Photoshop, Figma, Adobe After Effect, etc.",
+              "value": ""
+            },
+            {
+              "bsCol": "col-12",
+              "type": "textarea",
+              "name": "about_you",
+              "title": "About you",
+              "placeholder": "Tell us more details about you",
+              "value": ""
+            },
+            {
+              "name": "work_experience",
+              "type": "repeater",
+              "repeaterData": {
+                "mainTitle": "Work Experience",
+                "itemSample": {
+                  "content": [
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "text",
+                      "name": "company_name",
+                      "title": "Company Name",
+                      "placeholder": "Google Inc.",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "date-period",
+                      "name": "work_time_line",
+                      "title": "Work Timeline [since/till]",
+                      "placeholder": "Choose Date",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "text",
+                      "name": "position",
+                      "title": "Position",
+                      "placeholder": "Junior UX/UI Designer",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-12",
+                      "type": "textarea",
+                      "name": "details",
+                      "title": "Tell us about your work",
+                      "placeholder": "Tell us more details about you",
+                      "value": ""
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "invest-plan" : {
+    "info": {
+      "theme": "warning",
+      "title": "CV Generator",
+      "tagTxt": "Work Plan Only",
+      "subtitle": "Verify people's identities using a photo-based identity document, a selfie and artificial intelligence algorithms.",
+      "btnTxt": "Generate CV",
+      "htmlContent": "<h4>What is CV Generator?</h4><p>The CV Generator is an advanced AI tool designed to revolutionize the way you create and refine your curriculum vitae (CV) or resume. With its powerful features and intuitive interface, it empowers job seekers, professionals, and students to effortlessly generate impressive resumes tailored to their unique skills and experiences.</p><ul><li>Intelligent Resume Creation: The CV Generator harnesses the power of artificial intelligence to assist you in creating a compelling and professional resume. Through its smart algorithms, it analyzes your input and suggests appropriate sections, formats, and designs to ensure your resume stands out in a competitive job market.</li><li>Tailored to Your Profile: This AI tool recognizes that every individual has distinct qualifications and career objectives. By leveraging machine learning capabilities, it customizes your resume based on your specific skills, work history, education, and industry. It offers a personalized approach, ensuring that your CV accurately represents your unique professional profile.</li><li>Dynamic Templates and Formatting: CV Generator offers an extensive collection of visually appealing and modern resume templates. From classic to contemporary designs, it provides a range of options to suit different industries and roles. Additionally, it offers flexible formatting features, allowing you to easily adjust font styles, colors, and layouts to create a polished and eye-catching document.</li><li>Keyword Optimization: In today's digital age, many companies utilize applicant tracking systems (ATS) to filter resumes based on specific keywords. The CV Generator optimizes your resume by suggesting relevant keywords and phrases commonly sought after by recruiters and employers. This ensures that your CV aligns with the requirements of the desired job, increasing your chances of getting noticed.</li><li>Real-time Suggestions and Editing: As you construct your resume, the CV Generator provides real-time suggestions to enhance the content and structure of your CV. It assists in organizing your information, improving sentence structure, and highlighting accomplishments. These suggestions help you craft a persuasive and well-written document that effectively showcases your qualifications.</li><li>Language and Grammar Enhancement: With its built-in natural language processing capabilities, the CV Generator enhances the language and grammar of your resume. It helps eliminate typos, grammatical errors, and awkward phrasing, ensuring your document appears professional and error-free. This feature ensures that your CV makes a positive and polished impression on potential employers.</li><li>Easy Export and Sharing: Once you've created your CV, the CV Generator allows you to export it in multiple formats such as PDF, Word, or plain text, ensuring compatibility with various application processes. It also provides seamless integration with popular cloud storage platforms, enabling easy sharing and collaboration with others.</li></ul><p>In summary, the CV Generator is an indispensable AI tool that empowers you to create compelling and tailored resumes effortlessly. By leveraging the power of artificial intelligence, it saves you time, optimizes your CV, and increases your chances of landing your dream job. With its intelligent features and user-friendly interface, it is your ultimate assistant in crafting outstanding resumes.</p>",
+      "plan": {
+        "configKey": "work",
+        "title": "Available in Work Plan",
+        "price": "$60",
+        "btnTxt": "Buy Work Plan"
+      }
+    },
+    "workSpace": {
+      "title": "Generate CV from your text",
+      "subtitle": "You only need to enter your ideas and we will create everything for you",
+      "btnTxt": "Generate CV",
+      "data": {
+        "key": "cv-generation",
+        "title": "Generate CV from your text",
+        "descr": "You only need to enter your ideas and we will create everything for you",
+        "fields": {
+          "content": [
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "full_name",
+              "title": "Full Name",
+              "placeholder": "Vasiliy Petrenko",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "expert_in",
+              "title": "Expert In",
+              "placeholder": "UX/UI Design, English Teacher, etc.",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "years_of_experience",
+              "title": "Years of experience ",
+              "placeholder": "5+",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "skills",
+              "title": "Skills",
+              "placeholder": "Photoshop, Figma, Adobe After Effect, etc.",
+              "value": ""
+            },
+            {
+              "bsCol": "col-12",
+              "type": "textarea",
+              "name": "about_you",
+              "title": "About you",
+              "placeholder": "Tell us more details about you",
+              "value": ""
+            },
+            {
+              "name": "work_experience",
+              "type": "repeater",
+              "repeaterData": {
+                "mainTitle": "Work Experience",
+                "itemSample": {
+                  "content": [
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "text",
+                      "name": "company_name",
+                      "title": "Company Name",
+                      "placeholder": "Google Inc.",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "date-period",
+                      "name": "work_time_line",
+                      "title": "Work Timeline [since/till]",
+                      "placeholder": "Choose Date",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "text",
+                      "name": "position",
+                      "title": "Position",
+                      "placeholder": "Junior UX/UI Designer",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-12",
+                      "type": "textarea",
+                      "name": "details",
+                      "title": "Tell us about your work",
+                      "placeholder": "Tell us more details about you",
+                      "value": ""
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "post-generator" : {
+    "info": {
+      "theme": "warning",
+      "title": "CV Generator",
+      "tagTxt": "Work Plan Only",
+      "subtitle": "Verify people's identities using a photo-based identity document, a selfie and artificial intelligence algorithms.",
+      "btnTxt": "Generate CV",
+      "htmlContent": "<h4>What is CV Generator?</h4><p>The CV Generator is an advanced AI tool designed to revolutionize the way you create and refine your curriculum vitae (CV) or resume. With its powerful features and intuitive interface, it empowers job seekers, professionals, and students to effortlessly generate impressive resumes tailored to their unique skills and experiences.</p><ul><li>Intelligent Resume Creation: The CV Generator harnesses the power of artificial intelligence to assist you in creating a compelling and professional resume. Through its smart algorithms, it analyzes your input and suggests appropriate sections, formats, and designs to ensure your resume stands out in a competitive job market.</li><li>Tailored to Your Profile: This AI tool recognizes that every individual has distinct qualifications and career objectives. By leveraging machine learning capabilities, it customizes your resume based on your specific skills, work history, education, and industry. It offers a personalized approach, ensuring that your CV accurately represents your unique professional profile.</li><li>Dynamic Templates and Formatting: CV Generator offers an extensive collection of visually appealing and modern resume templates. From classic to contemporary designs, it provides a range of options to suit different industries and roles. Additionally, it offers flexible formatting features, allowing you to easily adjust font styles, colors, and layouts to create a polished and eye-catching document.</li><li>Keyword Optimization: In today's digital age, many companies utilize applicant tracking systems (ATS) to filter resumes based on specific keywords. The CV Generator optimizes your resume by suggesting relevant keywords and phrases commonly sought after by recruiters and employers. This ensures that your CV aligns with the requirements of the desired job, increasing your chances of getting noticed.</li><li>Real-time Suggestions and Editing: As you construct your resume, the CV Generator provides real-time suggestions to enhance the content and structure of your CV. It assists in organizing your information, improving sentence structure, and highlighting accomplishments. These suggestions help you craft a persuasive and well-written document that effectively showcases your qualifications.</li><li>Language and Grammar Enhancement: With its built-in natural language processing capabilities, the CV Generator enhances the language and grammar of your resume. It helps eliminate typos, grammatical errors, and awkward phrasing, ensuring your document appears professional and error-free. This feature ensures that your CV makes a positive and polished impression on potential employers.</li><li>Easy Export and Sharing: Once you've created your CV, the CV Generator allows you to export it in multiple formats such as PDF, Word, or plain text, ensuring compatibility with various application processes. It also provides seamless integration with popular cloud storage platforms, enabling easy sharing and collaboration with others.</li></ul><p>In summary, the CV Generator is an indispensable AI tool that empowers you to create compelling and tailored resumes effortlessly. By leveraging the power of artificial intelligence, it saves you time, optimizes your CV, and increases your chances of landing your dream job. With its intelligent features and user-friendly interface, it is your ultimate assistant in crafting outstanding resumes.</p>",
+      "plan": {
+        "configKey": "work",
+        "title": "Available in Work Plan",
+        "price": "$60",
+        "btnTxt": "Buy Work Plan"
+      }
+    },
+    "workSpace": {
+      "title": "Generate CV from your text",
+      "subtitle": "You only need to enter your ideas and we will create everything for you",
+      "btnTxt": "Generate CV",
+      "data": {
+        "key": "cv-generation",
+        "title": "Generate CV from your text",
+        "descr": "You only need to enter your ideas and we will create everything for you",
+        "fields": {
+          "content": [
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "full_name",
+              "title": "Full Name",
+              "placeholder": "Vasiliy Petrenko",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "expert_in",
+              "title": "Expert In",
+              "placeholder": "UX/UI Design, English Teacher, etc.",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "years_of_experience",
+              "title": "Years of experience ",
+              "placeholder": "5+",
+              "value": ""
+            },
+            {
+              "bsCol": "col-md-6",
+              "type": "text",
+              "name": "skills",
+              "title": "Skills",
+              "placeholder": "Photoshop, Figma, Adobe After Effect, etc.",
+              "value": ""
+            },
+            {
+              "bsCol": "col-12",
+              "type": "textarea",
+              "name": "about_you",
+              "title": "About you",
+              "placeholder": "Tell us more details about you",
+              "value": ""
+            },
+            {
+              "name": "work_experience",
+              "type": "repeater",
+              "repeaterData": {
+                "mainTitle": "Work Experience",
+                "itemSample": {
+                  "content": [
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "text",
+                      "name": "company_name",
+                      "title": "Company Name",
+                      "placeholder": "Google Inc.",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "date-period",
+                      "name": "work_time_line",
+                      "title": "Work Timeline [since/till]",
+                      "placeholder": "Choose Date",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-md-4",
+                      "type": "text",
+                      "name": "position",
+                      "title": "Position",
+                      "placeholder": "Junior UX/UI Designer",
+                      "value": ""
+                    },
+                    {
+                      "bsCol": "col-12",
+                      "type": "textarea",
+                      "name": "details",
+                      "title": "Tell us about your work",
+                      "placeholder": "Tell us more details about you",
+                      "value": ""
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
   }
 }

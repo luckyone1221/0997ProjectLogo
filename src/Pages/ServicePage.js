@@ -6,14 +6,14 @@ import {BackBtn} from "../Blocks/shared/BackBtn";
 import {Breadcrumbs} from "../Blocks/shared/Breadcrumbs";
 
 export const ServicePage = (props) => {
-  const {theme, description, configKey} = props;
+  const {configKey} = props;
 
   return(
     <div className="main-wrapper">
       <Header/>
       <Sidebar/>
       <main>
-        <ServiceDescr theme={theme} description={description} configKey={configKey}>
+        <ServiceDescr configKey={configKey}>
           <BackBtn/>
           <Breadcrumbs/>
         </ServiceDescr>

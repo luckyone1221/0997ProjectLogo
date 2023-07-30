@@ -170,6 +170,10 @@
     padding: rem(12) rem(20);
     border-radius: rem(6);
 
+    &:hover{
+      color: $white!important;
+    }
+
     font-size: 14px;
     font-weight: 600;
     line-height: calc(16/14);

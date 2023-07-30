@@ -31,7 +31,7 @@ export const App = () => {
           {/*!!!!!<Route for Plans: /plans*/}
 
           {/**/}
-          <Route path="/work/:service" element={<ServicePage description="Work Plan Only" theme="warning" configKey="work"/>}/>
+          <Route path="/work/:service" element={<ServicePage configKey="work"/>}/>
           <Route path="/work/:service/workspace" element={<TextWorkspacePage/>}/>
         </Routes>
       </BrowserRouter>

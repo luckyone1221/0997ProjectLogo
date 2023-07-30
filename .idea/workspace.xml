@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a340c945-d1dc-42c6-ae7d-b6ccc65f8a71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Blocks/WorkSpaceText/WSTextRepeater.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HooksAndFuncs/WorkspaceFuncs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servicesData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blocks/ServiceDescr/PlanBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/ServiceDescr/PlanBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blocks/ServiceDescr/ServiceDescr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/ServiceDescr/ServiceDescr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blocks/WorkSpaceText/WorkSpaceText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/WorkSpaceText/WorkSpaceText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blocks/WorkSpaceText/_WorkSpaceText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/WorkSpaceText/_WorkSpaceText.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/ServiceDescr/_ServiceDescr.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/ServiceDescr/_ServiceDescr.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ServicePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ServicePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servicesData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/servicesData.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../0901DisplayAdvPortfolioBitBucket2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEST/0997Sample" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -75,7 +71,7 @@
       <updated>1690328245125</updated>
       <workItem from="1690328246305" duration="6493000" />
       <workItem from="1690394131953" duration="24060000" />
-      <workItem from="1690483763321" duration="73958000" />
+      <workItem from="1690483763321" duration="77349000" />
     </task>
     <servers />
   </component>

@@ -1,18 +1,19 @@
 import stab from "../../img/svg/service-cv-generator.svg"
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {TagIcon} from "../../SvgSprites";
 import {PlanBox} from "./PlanBox";
 import {useState} from "react";
 import {useSelector} from "react-redux";
 
 export const ServiceDescr = (props) => {
-  const {theme, description, configKey, children} = props;
+  const {children} = props;
 
   const config = useSelector(state => state);
-  const [pageData, setPageData] = useState(config.servicesData["cv-generator"].info);
+  const params = useParams();
+  const [pageData, setPageData] = useState(config.servicesData[params.service].info);
 
   return(
-    <section className={`section sDescr ${theme}`}>
+    <section className={`section sDescr ${pageData.theme}`}>
       <div className="container">
         {children}
         <div className="sDescr__top-row row align-items-center">
