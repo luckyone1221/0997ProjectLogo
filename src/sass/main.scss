@@ -102,16 +102,16 @@ $output-bourbon-deprecation-warnings: false;
 @import "root";
 @import "base";
 
-@import '../blocks/Sidebar/_Sidebar.scss';
-@import '../blocks/Header/_Header.scss';
-@import '../blocks/Footer/_Footer.scss';
+@import '../Blocks/Sidebar/_Sidebar.scss';
+@import '../Blocks/Header/_Header.scss';
+@import '../Blocks/Footer/_Footer.scss';
 
-//blocks
-@import '../blocks/Login/_Login.scss';
-@import '../blocks/Dashboard/_Dashboard.scss';
-@import '../blocks/ServiceBoard/_ServiceBoard.scss';
-@import '../blocks/ServiceDescr/_ServiceDescr.scss';
-@import '../blocks/WorkSpaceText/_WorkSpaceText.scss';
+//Blocks
+@import '../Blocks/Login/_Login.scss';
+@import '../Blocks/Dashboard/_Dashboard.scss';
+@import '../Blocks/ServiceBoard/_ServiceBoard.scss';
+@import '../Blocks/ServiceDescr/_ServiceDescr.scss';
+@import '../Blocks/WorkSpaceText/_WorkSpaceText.scss';
 
 
 //@import '../pug/blocks/**/*.scss';
