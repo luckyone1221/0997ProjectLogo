@@ -176,7 +176,15 @@
       --icon-fill-col: #{$primary};
     }
   }
-  &__{}
+  &__go-btn{
+    @extend .btn;
+    @extend .btn-primary;
+
+    padding: rem(12) rem(14);
+    font-weight: 600;
+    line-height: 1.142;
+    letter-spacing: rem(-0.128);
+  }
   &__{}
   &__{}
 }

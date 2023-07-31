@@ -54,7 +54,7 @@ export const Breadcrumbs = (props) => {
           }
 
           return(
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               {index !== bcArray.length-1 && (
                 <>
                   <Link to={item.href} className="breadcrumbs__item">

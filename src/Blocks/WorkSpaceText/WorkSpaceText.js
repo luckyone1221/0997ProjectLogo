@@ -3,14 +3,18 @@ import {EditIcon, TrashBtn} from "../../SvgSprites";
 import {WSTextRepeater} from "./WSTextRepeater"
 import {getInputsKeys,} from "../../HooksAndFuncs/WorkspaceFuncs";
 import {useSelector} from "react-redux";
+import {generateCV} from "../../HooksAndFuncs/API/ApiFuncs";
+import {useParams} from "react-router-dom";
 
 export const WorkSpaceText = (props) => {
   const {children} = props;
   const config = useSelector(state => state);
 
-  const [pageData, setPageData] = useState(config.servicesData["cv-generator"].workSpace);
-  const [data,setData] = useState(config.servicesData["cv-generator"].workSpace.data);
+  const params = useParams();
+  const [pageData, setPageData] = useState(config.servicesData[params.service].workSpace);
+  const [data,setData] = useState(config.servicesData[params.service].workSpace.data);
   const [inputValues, setInputValues] = useState();
+  //Html, css, js, pug(jade), handlebars, reactJs(Redux), sass/scss, jQuery, bootstrap, npm, baisc php, baisc nodeJs, Photoshop, Figma, AdobeXD
 
   useEffect(() => {
     setInputValues(getInputsKeys(data));
@@ -39,7 +43,9 @@ export const WorkSpaceText = (props) => {
               }
             })}
           </div>
-          {/*.sWorkSpace__*/}
+          <div className="sWorkSpace__go-btn" onClick={() => {
+            generateCV(data);
+          }}>{pageData.btnTxt}</div>
         </div>
       </section>
     )

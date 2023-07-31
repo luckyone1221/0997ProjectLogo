@@ -28,10 +28,28 @@ const defaultState = {
         href: "/work/cv-generator",
       },
       {
+        key: "content-plan",
+        img: stab,
+        name: "Content Plan",
+        href: "/work/content-plan",
+      },
+      {
+        key: "marketing-plan",
+        img: stab,
+        name: "Marketing Plan",
+        href: "/work/marketing-plan",
+      },
+      {
         key: "invest-plan",
         img: stab,
         name: "Invest Plan",
         href: "/work/invest-plan",
+      },
+      {
+        key: "post-generator",
+        img: stab,
+        name: "Post Generator",
+        href: "/work/post-generator",
       },
     ],
     study: [
@@ -41,12 +59,6 @@ const defaultState = {
         name: "CV Generator",
         href: "/study/cv-generator",
       },
-      {
-        key: "invest-plan",
-        img: stab2,
-        name: "Invest Plan",
-        href: "/study/invest-plan",
-      },
     ],
     business: [
       {
@@ -54,12 +66,6 @@ const defaultState = {
         img: stab3,
         name: "CV Generator",
         href: "/business/cv-generator",
-      },
-      {
-        key: "invest-plan",
-        img: stab3,
-        name: "Invest Plan",
-        href: "/business/invest-plan",
       },
     ],
   }

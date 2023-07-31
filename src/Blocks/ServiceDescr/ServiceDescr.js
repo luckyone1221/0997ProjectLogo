@@ -1,8 +1,8 @@
 import stab from "../../img/svg/service-cv-generator.svg"
-import {Link, useParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import {TagIcon} from "../../SvgSprites";
 import {PlanBox} from "./PlanBox";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useSelector} from "react-redux";
 
 export const ServiceDescr = (props) => {
@@ -10,7 +10,15 @@ export const ServiceDescr = (props) => {
 
   const config = useSelector(state => state);
   const params = useParams();
+  const navigate = useNavigate();
+
+  const [currentPass, setCurrentPass] = useState(window.location.pathname);
   const [pageData, setPageData] = useState(config.servicesData[params.service].info);
+
+  useEffect(() => {
+    setCurrentPass(window.location.pathname);
+    setPageData(config.servicesData[params.service].info);
+  }, [navigate])
 
   return(
     <section className={`section sDescr ${pageData.theme}`}>
@@ -41,7 +49,7 @@ export const ServiceDescr = (props) => {
             </div>
           </div>
           <div className="col-lg-auto">
-            <Link className="sDescr__generate-btn" to={`${window.location.pathname}/workspace`}>
+            <Link className="sDescr__generate-btn" to={`${currentPass}/workspace`}>
               {pageData.btnTxt}
             </Link>
           </div>

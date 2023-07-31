@@ -10,6 +10,7 @@ import {CategoryPage} from "./Pages/CategoryPage";
 import {ServicePage} from "./Pages/ServicePage";
 import {TextWorkspacePage} from "./Pages/TextWorkspacePage";
 import {AuthProvider} from "./context/AuthContext";
+import {PlansPage} from "./Pages/PlansPage";
 
 export const App = () => {
 
@@ -24,11 +25,11 @@ export const App = () => {
           <Route path="/sign-up" element={<SignUpPage/>}/>
 
           {/**/}
+          <Route path="/plans" element={<PlansPage/>}/>
           <Route path="/dashboard" element={<DashboardPage/>}/>
           <Route path="/work"  element={<CategoryPage name="Work" description="Work Plan Only" configKey="work" theme="warning"/>}/>
           <Route path="/study" element={<CategoryPage name="Study" description="Study Plan Only" configKey="study" theme="primary"/>}/>
           <Route path="/business" element={<CategoryPage name="Business" description="Business Plan Only" configKey="business" theme="info"/>}/>
-          {/*!!!!!<Route for Plans: /plans*/}
 
           {/**/}
           <Route path="/work/:service" element={<ServicePage configKey="work"/>}/>
