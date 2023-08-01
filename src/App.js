@@ -11,6 +11,7 @@ import {ServicePage} from "./Pages/ServicePage";
 import {TextWorkspacePage} from "./Pages/TextWorkspacePage";
 import {AuthProvider} from "./context/AuthContext";
 import {PlansPage} from "./Pages/PlansPage";
+import {TxtEditorPage} from "./Pages/TxtEditorPage";
 
 export const App = () => {
 
@@ -34,6 +35,7 @@ export const App = () => {
           {/**/}
           <Route path="/work/:service" element={<ServicePage configKey="work"/>}/>
           <Route path="/work/:service/workspace" element={<TextWorkspacePage/>}/>
+          <Route path="/work/:service/editor" element={<TxtEditorPage/>}/>
         </Routes>
       </BrowserRouter>
     </AuthProvider>

@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a340c945-d1dc-42c6-ae7d-b6ccc65f8a71" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/TxtEditor/DraftJs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/TxtEditor/MegaDraft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/TxtEditor/TxtEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/TxtEditor/_TxtEditor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/TxtEditorPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/WorkSpaceText/WorkSpaceText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/WorkSpaceText/WorkSpaceText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HooksAndFuncs/API/ApiFuncs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HooksAndFuncs/API/ApiFuncs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SvgSprites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SvgSprites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEST/0997Sample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEST/0997ProjectLogoSample/ai-project-2023/ai-project-2023" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -67,7 +80,7 @@
       <workItem from="1690328246305" duration="6493000" />
       <workItem from="1690394131953" duration="24060000" />
       <workItem from="1690483763321" duration="86644000" />
-      <workItem from="1690797150914" duration="2442000" />
+      <workItem from="1690797150914" duration="14996000" />
     </task>
     <servers />
   </component>

@@ -12,7 +12,7 @@ export const WorkSpaceText = (props) => {
 
   const params = useParams();
   const [pageData, setPageData] = useState(config.servicesData[params.service].workSpace);
-  const [data,setData] = useState(config.servicesData[params.service].workSpace.data);
+  const [data, setData] = useState(config.servicesData[params.service].workSpace.data);
   const [inputValues, setInputValues] = useState();
   //Html, css, js, pug(jade), handlebars, reactJs(Redux), sass/scss, jQuery, bootstrap, npm, baisc php, baisc nodeJs, Photoshop, Figma, AdobeXD
 
