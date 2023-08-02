@@ -22,6 +22,8 @@
     @include media-breakpoint-up(sm){
       padding: rem(16) var(--box-px);
     }
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   }
   &__h-row{
     --bs-gutter-x: #{rem(16)};
@@ -47,6 +49,7 @@
   &__h-chb{
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   &__h-txt{
     @include mt();
@@ -61,31 +64,155 @@
     }
   }
   &__h-ball{
+
+    @include mt();
     width: rem(48);
     border-radius: rem(24);
     padding: 2px;
+    margin: 12px;
+    background: $secondary;
 
     &:before{
+      @include mt();
       content: '';
       display: block;
+      width: rem(26);
+      height: rem(26);
+      border-radius: rem(20);
+      background: $white;
+    }
 
+    &.active{
+      background: $primary;
+
+      &:before{
+        margin-left: calc(#{rem(48)} - 4px - #{rem(26)});
+      }
     }
   }
-  &__h-txt{}
-  &__body{}
-  &__main-row{}
+  &__body{
+    padding: rem(20) var(--box-px) rem(24);
+  }
+  &__main-row{
+    --bs-gutter-x: #{rem(16)};
+    --bs-gutter-y: #{rem(16)};
+  }
 
   //
-  &__card{}
-  &__c-head-row{}
-  &__c-logo{}
-  &__c-name{}
-  &__c-price-box{}
-  &__c-price{}
-  &__c-gray{}
-  &__c-services{}
-  &__c-descr{}
-  &__c-btn{}
+  &__card{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: rem(8);
+    border: 1px solid #373739;
+    background: #1D1E1F;
+
+    padding: rem(24) rem(16);
+    @include media-breakpoint-up(xxl){
+      padding: rem(24);
+    }
+
+    cursor: pointer;
+    &:hover{
+      --btn-bg: #{$primary};
+    }
+  }
+  &__c-head-row{
+    --bs-gutter-x: #{rem(24)};
+    flex-wrap: nowrap;
+    margin-bottom: rem(25);
+  }
+  &__c-logo{
+    --icon-fill-col: #FAFAFA;
+    &--warning{
+      background-color: $warning;
+      --icon-fill-col: #373739;
+    }
+    &--primary{
+      background-color: $primary;
+    }
+    &--info{
+      background-color: $info;
+    }
+    &--purple{
+      background-color: #993BF6;
+    }
+
+    width: rem(44);
+    height: rem(44);
+    border-radius: rem(8);
+
+    padding: rem(8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > *{
+      width: 100%;
+    }
+  }
+  &__c-name{
+    color: $white;
+    font-size: rem(16);
+    font-weight: 600;
+    line-height: calc(24/16);
+    letter-spacing: rem(-0.176);
+  }
+  &__c-price-box{
+    display: flex;
+    align-items: baseline;
+  }
+  &__c-price{
+    color: $white;
+    font-weight: 500;
+    letter-spacing: rem(-0.128);
+  }
+  &__c-gray{
+    color: $secondary;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  &__c-services{
+    margin-bottom: rem(32);
+  }
+  &__c-item{
+    margin-bottom: rem(8);
+  }
+  &__c-item-row{
+    --bs-gutter-x: #{rem(16)};
+  }
+  &__c-service-name{
+    color: $white;
+    letter-spacing: rem(-0.128);
+  }
+  &__c-descr{
+    color: $white;
+    letter-spacing: rem(-0.128);
+  }
+  &__c-btn{
+    @extend .btn;
+    @extend .btn-outline-primary;
+
+    margin-top: auto;
+    min-width: 100%;
+    color: $white!important;
+
+    border-radius: rem(6);
+    border: 1px solid $green2!important;
+    background: var(--btn-bg, #171819)!important;
+
+    &:hover{
+      background: $green2!important;
+    }
+
+    font-size: rem(13);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: rem(-0.04);
+    padding: rem(12.5);
+  }
 
   //
   &__{}

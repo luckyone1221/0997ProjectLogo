@@ -1,9 +1,9 @@
-import {MenuIconAll, MenuIconBusiness, MenuIconStudy, MenuIconWork} from "../../SvgSprites";
+import {MenuIconAll, MenuIconBusiness, MenuIconStudy, MenuIconWork, StarIcon} from "../../SvgSprites";
 import {useState} from "react";
+import {useSelector} from "react-redux";
 
 export const Plans = (props) => {
   const {} = props;
-
   const [billForPeriod, setBillForPeriod] = useState("year");
 
   return(
@@ -12,13 +12,13 @@ export const Plans = (props) => {
         <div className="sPlans__box">
           <div className="sPlans__header">
             <div className="sPlans__h-row row">
-              <div className="col">
+              <div className="col-sm">
                 <div className="section-title">
                   <h1>Choose a plan</h1>
                   <p>Select the offer tha best suits your need</p>
                 </div>
               </div>
-              <div className="col-auto">
+              <div className="col-sm-auto">
                 <div className="sPlans__h-chb" onClick={() => {
                   billForPeriod === "year" ? setBillForPeriod("month") : setBillForPeriod("year");
                 }}>
@@ -85,8 +85,10 @@ export const Plans = (props) => {
 export const PlansCard = (props) => {
   const {icon, theme, name, price, configKey, btnTxt, onClick} = props;
 
+  const config = useSelector(state => state);
+
   return(
-    <div className="col-lg-3 col-sm-6" onClick={() => {onClick()}}>
+    <div className="col-xxl-3 col-sm-6" onClick={() => {onClick()}}>
       <div className="sPlans__card">
         <div className="sPlans__c-head-row row">
           <div className="col-auto">
@@ -104,7 +106,22 @@ export const PlansCard = (props) => {
         </div>
         {configKey && (
           <div className="sPlans__c-services">
-
+            {config.menuLinks[configKey].map((item,index) => {
+              return (
+                <div className="sPlans__c-item">
+                  <div className="sPlans__c-item-row row">
+                    <div className="col-auto">
+                      <StarIcon/>
+                    </div>
+                    <div className="col">
+                      <div className="sPlans__c-service-name">
+                        {item.name}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         )}
         {!configKey && (
