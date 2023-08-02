@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {generateCV} from "../HooksAndFuncs/API/ApiFuncs";
 
-// const baseUrl = process.env.REACT_APP_API_URL
+const baseUrl = process.env.REACT_APP_API_URL
 
 class Service {
   constructor() {
@@ -41,15 +41,11 @@ export class GenerateServices extends Service{
 }
 
 class UserService extends Service{
-  constructor() {
-    super();
-  }
 
   static registerUser = async (userRegisterData) => {
-    let self = this;
 
     const response = await axios.post(
-      `${self.baseUrl}users/`,
+      `${baseUrl}users/`,
       userRegisterData
     )
     return response.data
@@ -59,7 +55,7 @@ class UserService extends Service{
     let self = this;
 
     const response = await axios.post(
-      `${self.baseUrl}login-user/`,
+      `${baseUrl}login-user/`,
       userLoginData
     )
     return response.data
