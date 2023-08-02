@@ -2,18 +2,24 @@ import {useEffect, useState} from "react";
 import {EditIcon, TrashBtn} from "../../SvgSprites";
 import {WSTextRepeater} from "./WSTextRepeater"
 import {getInputsKeys,} from "../../HooksAndFuncs/WorkspaceFuncs";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {generateCV} from "../../HooksAndFuncs/API/ApiFuncs";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
+import {GenerateServices} from "./../../services/AxiosService"
 
 export const WorkSpaceText = (props) => {
   const {children} = props;
-  const config = useSelector(state => state);
 
+  const config = useSelector(state => state);
+  const dispatch = useDispatch();
   const params = useParams();
+  const navigate = useNavigate();
+
+  const GenerateServicesFuncs = new GenerateServices();
   const [pageData, setPageData] = useState(config.servicesData[params.service].workSpace);
   const [data, setData] = useState(config.servicesData[params.service].workSpace.data);
   const [inputValues, setInputValues] = useState();
+
   //Html, css, js, pug(jade), handlebars, reactJs(Redux), sass/scss, jQuery, bootstrap, npm, baisc php, baisc nodeJs, Photoshop, Figma, AdobeXD
 
   useEffect(() => {
@@ -44,7 +50,11 @@ export const WorkSpaceText = (props) => {
             })}
           </div>
           <div className="sWorkSpace__go-btn" onClick={() => {
-            generateCV(data);
+            //todo handle wich method to choose
+            GenerateServicesFuncs.generateCV(inputValues).then((data) => {
+              dispatch({type: "CHANGE_TXTEDITORCONTENT", payload: data.generated_cv});
+              navigate('/work/cv-generator/editor')
+            })
           }}>{pageData.btnTxt}</div>
         </div>
       </section>

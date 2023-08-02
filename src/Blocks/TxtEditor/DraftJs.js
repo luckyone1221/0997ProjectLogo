@@ -10,8 +10,11 @@ export const DraftJs = (props) => {
   const {} = props;
 
   const config = useSelector(state => state);
-  // const [editorState, setEditorState] = useState(EditorState.createWithContent(ContentState.createFromText(config.txtEditorContent)));
-  const [editorState, setEditorState] = useState(EditorState.createWithContent(stateFromHTML(config.txtEditorContent)));
+  //create from Txt
+  const [editorState, setEditorState] = useState(EditorState.createWithContent(ContentState.createFromText(config.txtEditorContent)));
+
+  //create from HTML
+  // const [editorState, setEditorState] = useState(EditorState.createWithContent(stateFromHTML(config.txtEditorContent)));
 
   const onChange = editorState => setEditorState(editorState);
 
