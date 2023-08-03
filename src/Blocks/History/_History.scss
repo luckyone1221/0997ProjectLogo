@@ -1,0 +1,113 @@
+.sHistory{
+  --sTPB: 0;
+
+  --sPT: #{rem(40)};
+  @include media-breakpoint-up(lg){
+    --sPT: #{rem(80)};
+  }
+
+  &__box{
+    font-size: rem(11);
+    @media (min-width: 350px) {
+      font-size: rem(12);
+    }
+    @media (min-width: 380px) {
+      font-size: rem(13);
+    }
+    @include media-breakpoint-up(sm){
+      font-size: rem(14);
+    }
+
+    @include media-breakpoint-up(md){
+      max-width: rem(640);
+      margin: 0 auto;
+    }
+
+    border-radius: rem(12);
+    overflow: hidden;
+    border: 1px solid #2C2C2E;
+    background: #171819;
+    box-shadow: 0px 5px 4px -4px rgba(0, 0, 0, 0.02), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+
+
+    --box-px: #{rem(12)};
+    @include media-breakpoint-up(sm){
+      --box-px: #{rem(20)};
+    }
+  }
+  &__header{
+    h1{
+      font-size: rem(18);
+      font-weight: 600;
+      line-height: calc(28/18);
+      letter-spacing: rem(-0.256);
+      margin-bottom: 0;
+    }
+
+    padding: rem(12) var(--box-px);
+    @include media-breakpoint-up(sm){
+      padding: rem(16) var(--box-px);
+    }
+  }
+  &__table{
+
+  }
+  &__t-head{
+    background: #1D1E1F;
+
+    border-top: 1px solid rgba(44, 44, 46, 1);
+    border-bottom: 1px solid rgba(44, 44, 46, 1);
+
+    padding: rem(8) var(--box-px);
+  }
+  &__row{
+    --bs-gutter-x: var(--box-px);
+  }
+  &__t-head-txt{
+    font-weight: 600;
+    letter-spacing: rem(-0.128);
+  }
+
+  //item
+  &__item{
+    @include mt();
+    padding: rem(8) var(--box-px);
+
+    &:hover{
+      background: #1D1E1F;
+    }
+  }
+  &__date{
+    font-weight: 600;
+    letter-spacing: rem(-0.128);
+  }
+  &__type{
+    color: $secondary;
+    font-weight: 500;
+    letter-spacing: rem(-0.128);
+  }
+  &__links-row{
+    --bs-gutter-x: #{rem(12)};
+    @include media-breakpoint-up(sm){
+      --bs-gutter-x: #{rem(16)};
+    }
+  }
+  &__details{
+    font-weight: 600;
+    line-height: calc(16/14);
+    letter-spacing: rem(-0.128);
+
+    color: $secondary;
+    &:hover{
+      color: $primary;
+    }
+  }
+  &__download{
+    font-weight: 600;
+    line-height: calc(16/14);
+    letter-spacing: rem(-0.128);
+  }
+
+  &__{}
+  &__{}
+}

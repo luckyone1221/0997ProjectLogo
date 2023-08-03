@@ -12,6 +12,7 @@ import {TextWorkspacePage} from "./Pages/TextWorkspacePage";
 import {AuthProvider} from "./context/AuthContext";
 import {PlansPage} from "./Pages/PlansPage";
 import {TxtEditorPage} from "./Pages/TxtEditorPage";
+import {HistoryPage} from "./Pages/HistoryPage";
 
 export const App = () => {
 
@@ -25,7 +26,10 @@ export const App = () => {
           <Route path="/resetPass-step1" element={<ResetPassPage/>}/>
           <Route path="/sign-up" element={<SignUpPage/>}/>
 
-          {/**/}
+          {/*settings*/}
+          <Route path="/settings/history" element={<HistoryPage/>}/>
+
+          {/*dashboard*/}
           <Route path="/plans" element={<PlansPage/>}/>
           <Route path="/dashboard" element={<DashboardPage/>}/>
           <Route path="/work"  element={<CategoryPage name="Work" description="Work Plan Only" configKey="work" theme="warning"/>}/>
@@ -36,6 +40,7 @@ export const App = () => {
           <Route path="/work/:service" element={<ServicePage configKey="work"/>}/>
           <Route path="/work/:service/workspace" element={<TextWorkspacePage/>}/>
           <Route path="/work/:service/editor" element={<TxtEditorPage/>}/>
+
         </Routes>
       </BrowserRouter>
     </AuthProvider>

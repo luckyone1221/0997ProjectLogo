@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a340c945-d1dc-42c6-ae7d-b6ccc65f8a71" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Blocks/History/History.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blocks/History/_History.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/HistoryPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blocks/Plans/Plans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/Plans/Plans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blocks/Plans/_Plans.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blocks/Plans/_Plans.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SvgSprites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SvgSprites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,7 @@
       <workItem from="1690328246305" duration="6493000" />
       <workItem from="1690394131953" duration="24060000" />
       <workItem from="1690483763321" duration="86644000" />
-      <workItem from="1690797150914" duration="30425000" />
+      <workItem from="1690797150914" duration="36077000" />
     </task>
     <servers />
   </component>
