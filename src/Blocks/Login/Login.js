@@ -116,11 +116,14 @@ export const LoginInput = (props) => {
         </span>
       )}
       <span className="sLogin__inp-box">
-        <span className="sLogin__icon">
-          {icon}
-        </span>
+        {icon && (
+          <span className="sLogin__icon">
+            {icon}
+          </span>
+        )}
         <input
-          type={type}
+          type={type === "readonly" ? "text" : type}
+          readOnly={type === "readonly"}
           className={`sLogin__input form-control ${icon && setType ? 'sLogin__input--spaced-x' : (icon ? 'sLogin__input--spaced-l' : '')} `}
           placeholder={placeholder}
           value={value}

@@ -5,11 +5,11 @@ import {Link} from "react-router-dom";
 import {useAuth} from "../../context/AuthContext";
 
 export const SidebarProfileBtn = (props) => {
-  const {currentUser} = useAuth()
-  const {} = props;
+  const {currentUser} = useAuth();
+  const {whithoutDropDown} = props;
 
   return(
-    <Link className="sidebar__profile-btn" to={'/profile'}>
+    <div className="sidebar__profile-btn">
       <div className="sidebar__pb-row row align-items-center">
         <div className="col-auto">
           <div className="sidebar__pb-avatar">
@@ -17,15 +17,17 @@ export const SidebarProfileBtn = (props) => {
           </div>
         </div>
         {currentUser &&
-            <div className="col">
-              <div className="sidebar__pb-name">{currentUser.first_name}</div>
-              <div className="sidebar__pb-tag">{currentUser.last_name}</div>
-            </div>
+          <div className="col">
+            <div className="sidebar__pb-name">{currentUser.first_name} {currentUser.last_name}</div>
+            <div className="sidebar__pb-tag">@DoWeHaveUserName?</div>
+          </div>
         }
-        <div className="col-auto">
-          <ThreeDotsIcon/>
-        </div>
+        {!whithoutDropDown && (
+          <div className="col-auto">
+            <ThreeDotsIcon/>
+          </div>
+        )}
       </div>
-    </Link>
+    </div>
   )
 }

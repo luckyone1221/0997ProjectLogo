@@ -13,6 +13,8 @@ import {AuthProvider} from "./context/AuthContext";
 import {PlansPage} from "./Pages/PlansPage";
 import {TxtEditorPage} from "./Pages/TxtEditorPage";
 import {HistoryPage} from "./Pages/HistoryPage";
+import {SecurityPage} from "./Pages/SecurityPage";
+import {ProfilePage} from "./Pages/ProfilePage";
 
 export const App = () => {
 
@@ -27,7 +29,9 @@ export const App = () => {
           <Route path="/sign-up" element={<SignUpPage/>}/>
 
           {/*settings*/}
+          <Route path="/settings/security" element={<SecurityPage/>}/>
           <Route path="/settings/history" element={<HistoryPage/>}/>
+          <Route path="/settings/profile" element={<ProfilePage/>}/>
 
           {/*dashboard*/}
           <Route path="/plans" element={<PlansPage/>}/>

@@ -1,10 +1,9 @@
 import {Header} from "../Blocks/Header/Header";
 import {Sidebar} from "../Blocks/Sidebar/Sidebar";
-import {Plans} from "../Blocks/Plans/Plans";
 import {Footer} from "../Blocks/Footer/Footer";
-import {History} from "../Blocks/History/History";
+import {ProfileBox} from "../Blocks/ProfileBox/ProfileBox";
 
-export const HistoryPage = (props) => {
+export const ProfilePage = (props) => {
   const {} = props;
 
   return(
@@ -12,7 +11,7 @@ export const HistoryPage = (props) => {
       <Header/>
       <Sidebar/>
       <main>
-        <History/>
+        <ProfileBox/>
       </main>
       <Footer/>
     </div>

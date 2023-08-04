@@ -1,0 +1,80 @@
+.sSecurity{
+  --sTPB: 0;
+
+  --sPT: #{rem(40)};
+  @include media-breakpoint-up(lg){
+    --sPT: #{rem(80)};
+  }
+
+  &__box{
+    @include media-breakpoint-up(md){
+      max-width: rem(640);
+      margin: 0 auto;
+    }
+
+    border-radius: rem(12);
+    overflow: hidden;
+    border: 1px solid #2C2C2E;
+    background: #171819;
+    box-shadow: 0px 5px 4px -4px rgba(0, 0, 0, 0.02), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+
+    --box-px: #{rem(16)};
+    @include media-breakpoint-up(sm){
+      --box-px: #{rem(24)};
+    }
+  }
+  &__header{
+    h1{
+      font-size: rem(18);
+      font-weight: 600;
+      line-height: calc(28/18);
+      letter-spacing: rem(-0.256);
+      margin-bottom: 0;
+    }
+
+    padding: rem(16) var(--box-px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  &__content{
+    padding: rem(32) var(--box-px) rem(16);
+    @include media-breakpoint-up(sm){
+      padding: rem(45) var(--box-px) rem(16);
+    }
+  }
+  &__inputs{
+    margin-bottom: rem(32);
+    @include media-breakpoint-up(sm){
+      margin-bottom: rem(40);
+    }
+
+    .sLogin{
+      &__inp-wrap{
+        margin-bottom: rem(24);
+      }
+    }
+  }
+  &__btns-row{
+    --bs-gutter-x: #{rem(12)};
+    --bs-gutter-y: #{rem(12)};
+  }
+  &__btn{
+    @extend .btn;
+    width: 100%;
+
+    &--outline-secondary{
+      color: $body-color!important;
+
+      border-color: #2C2C2E!important;
+      &:hover{
+        background: #2C2C2E!important;
+      }
+
+      @extend .btn-outline-secondary;
+    }
+    &--primary{
+      @extend .btn-primary;
+    }
+  }
+  &__{}
+  &__{}
+}

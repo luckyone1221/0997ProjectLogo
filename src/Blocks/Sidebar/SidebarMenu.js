@@ -50,9 +50,11 @@ export const SidebarMenuItem = (props) => {
     <div className="sidebar__menu-item">
       <div className={`sidebar__plate ${isActive ? "active" : ""}`}>
         <Link to={href} className="sidebar__link">
-          <div className="sidebar__icon">
-            {icon}
-          </div>
+          {icon && (
+            <div className="sidebar__icon">
+              {icon}
+            </div>
+          )}
           <div className="sidebar__name">
             {itemName}
           </div>
