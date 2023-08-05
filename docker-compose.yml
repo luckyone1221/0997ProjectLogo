@@ -1,0 +1,15 @@
+version: '3'
+services:
+  react-app:
+    build: .
+    volumes:
+      - .:/ react-app
+      - .env:/react-app/.env:ro
+    ports:
+      - "8080:80"
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d:ro
+    ports:
+      - "80:80"

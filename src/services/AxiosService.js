@@ -52,12 +52,12 @@ class UserService extends Service{
   }
 
   static loginUser = async (userLoginData) => {
-    let self = this;
-
+    console.log(baseUrl)
     const response = await axios.post(
       `${baseUrl}login-user/`,
       userLoginData
     )
+    console.log(response)
     return response.data
   }
 }
